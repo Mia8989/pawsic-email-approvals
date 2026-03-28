@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAWSIC Email Templates -- EC Review &amp; Approval</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: #f5f3ef;
+      color: #3d4a5c;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    .accent-bar { height: 4px; background: linear-gradient(90deg, #0c1f3f 0%, #1e3a6e 30%, #2b7cca 60%, #3a9e8f 100%); }
+
+    .header {
+      background: linear-gradient(145deg, #0c1f3f 0%, #162d52 50%, #1e3a6e 100%);
+      padding: 48px 24px;
+      text-align: center;
+    }
+    .header-logo {
+      display: flex; align-items: center; justify-content: center; gap: 14px;
+      margin-bottom: 32px;
+    }
+    .header-logo img { width: 52px; height: 52px; border-radius: 10px; }
+    .header-logo-text h1 {
+      font-family: 'Inter', sans-serif; font-size: 22px; font-weight: 700;
+      color: #fff; letter-spacing: 0.5px;
+    }
+    .header-logo-text p {
+      font-size: 10px; color: rgba(255,255,255,0.5);
+      text-transform: uppercase; letter-spacing: 1.2px; margin-top: 3px;
+    }
+    .header h2 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 36px; color: #fff; margin-bottom: 14px; line-height: 1.2;
+    }
+    .header h2 em { color: #38b6ff; font-style: italic; }
+    .header .subtitle {
+      font-size: 15px; color: rgba(255,255,255,0.65);
+      max-width: 560px; margin: 0 auto; line-height: 1.65;
+    }
+
+    /* ── Main container ── */
+    .main { max-width: 1200px; margin: 0 auto; padding: 48px 24px 64px; }
+
+    /* ── Instructions card ── */
+    .instructions {
+      background: #fff; border: 1px solid #e8edf2; border-radius: 16px;
+      padding: 36px; margin-bottom: 48px;
+    }
+    .instructions h3 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 24px; color: #0c1f3f; margin-bottom: 16px;
+    }
+    .instructions p { font-size: 15px; line-height: 1.65; margin-bottom: 10px; }
+    .instructions ol { padding-left: 22px; margin-bottom: 12px; }
+    .instructions li { font-size: 15px; line-height: 1.65; margin-bottom: 6px; }
+
+    /* ── Category header ── */
+    .category {
+      margin: 48px 0 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #e8edf2;
+    }
+    .category h3 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 26px; color: #0c1f3f;
+    }
+    .category p { font-size: 14px; color: #7a8699; margin-top: 4px; }
+
+    /* ── Email review card ── */
+    .review-card {
+      background: #fff; border: 1px solid #e8edf2; border-radius: 16px;
+      overflow: hidden; margin-bottom: 32px;
+    }
+    .card-top {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 24px 28px; border-bottom: 1px solid #f0f2f5; flex-wrap: wrap; gap: 12px;
+    }
+    .card-top h4 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 22px; color: #0c1f3f;
+    }
+    .badge {
+      display: inline-block; font-family: 'Inter', sans-serif;
+      font-size: 10px; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; padding: 6px 16px; border-radius: 100px;
+    }
+    .badge-gold   { background: #c9a84c; color: #0c1f3f; }
+    .badge-blue   { background: rgba(56,182,255,0.15); color: #38b6ff; }
+    .badge-teal   { background: rgba(58,158,143,0.15); color: #3a9e8f; }
+    .badge-navy   { background: rgba(12,31,63,0.1); color: #0c1f3f; }
+    .badge-coral  { background: rgba(220,100,80,0.12); color: #dc6450; }
+
+    .card-body { display: flex; min-height: 600px; }
+
+    /* Left: iframe */
+    .preview-col {
+      flex: 1 1 60%; border-right: 1px solid #f0f2f5;
+      position: relative; min-width: 0;
+    }
+    .preview-col iframe {
+      width: 100%; height: 100%; border: none; min-height: 600px;
+    }
+    .preview-col .view-full {
+      position: absolute; top: 12px; right: 12px;
+      background: rgba(12,31,63,0.8); color: #fff;
+      font-size: 12px; font-weight: 600; padding: 6px 14px;
+      border-radius: 100px; text-decoration: none;
+      transition: background 0.2s;
+    }
+    .preview-col .view-full:hover { background: rgba(12,31,63,1); }
+
+    /* Right: info + feedback */
+    .feedback-col {
+      flex: 1 1 40%; padding: 28px; display: flex;
+      flex-direction: column; min-width: 280px;
+    }
+    .email-info { margin-bottom: 24px; }
+    .email-info h5 {
+      font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 1px; color: #7a8699;
+      margin-bottom: 10px;
+    }
+    .email-info p { font-size: 14px; line-height: 1.6; color: #3d4a5c; margin-bottom: 8px; }
+    .info-label { font-weight: 600; color: #0c1f3f; }
+
+    .feedback-form { flex: 1; display: flex; flex-direction: column; }
+    .feedback-form h5 {
+      font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 1px; color: #7a8699;
+      margin-bottom: 12px;
+    }
+    .feedback-form label {
+      font-size: 13px; font-weight: 600; color: #0c1f3f;
+      display: block; margin-bottom: 6px;
+    }
+    .feedback-form input[type="text"],
+    .feedback-form textarea {
+      width: 100%; border: 1px solid #dde2e8; border-radius: 10px;
+      padding: 12px 14px; font-family: 'Inter', sans-serif; font-size: 14px;
+      color: #3d4a5c; background: #fafbfc; transition: border 0.2s;
+      margin-bottom: 16px;
+    }
+    .feedback-form input:focus,
+    .feedback-form textarea:focus {
+      outline: none; border-color: #38b6ff; background: #fff;
+    }
+    .feedback-form textarea { flex: 1; min-height: 120px; resize: vertical; }
+
+    .form-actions { display: flex; gap: 12px; margin-top: 16px; flex-wrap: wrap; }
+
+    .btn {
+      font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600;
+      border: none; border-radius: 100px; padding: 12px 24px; cursor: pointer;
+      transition: all 0.2s; text-align: center;
+    }
+    .btn-approve { background: #3a9e8f; color: #fff; flex: 1; }
+    .btn-approve:hover { background: #2e8577; }
+    .btn-changes { background: #fff; color: #0c1f3f; border: 1px solid #dde2e8; flex: 1; }
+    .btn-changes:hover { background: #f5f3ef; }
+
+    /* ── Thank you message ── */
+    .thank-you {
+      display: none; background: #e8f7f3; border: 1px solid #3a9e8f;
+      border-radius: 12px; padding: 20px; text-align: center;
+      margin-top: 16px;
+    }
+    .thank-you.show { display: block; }
+    .thank-you p { font-size: 15px; color: #2e8577; font-weight: 600; }
+
+    /* ── Footer ── */
+    .footer {
+      text-align: center; padding: 32px 24px;
+      font-size: 13px; color: #7a8699;
+      border-top: 1px solid #e8edf2;
+      max-width: 1200px; margin: 0 auto;
+    }
+    .footer a { color: #38b6ff; text-decoration: none; }
+
+    /* ── Mobile ── */
+    @media (max-width: 768px) {
+      .header { padding: 36px 20px; }
+      .header h2 { font-size: 28px; }
+      .main { padding: 24px 16px 40px; }
+      .instructions { padding: 24px 20px; }
+      .card-body { flex-direction: column; }
+      .preview-col { border-right: none; border-bottom: 1px solid #f0f2f5; }
+      .preview-col iframe { min-height: 500px; }
+      .feedback-col { padding: 24px 20px; min-width: auto; }
+      .category h3 { font-size: 22px; }
+      .card-top h4 { font-size: 19px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="accent-bar"></div>
+
+<div class="header">
+  <div class="header-logo">
+    <img src="https://www.jotform.com/uploads/executiveteam_executiveteam874/form_files/Screenshot%202023-04-01%20at%202.19.16%20PM.6446d75ba93ad5.09289746.png" alt="PAWSIC Logo" />
+    <div class="header-logo-text">
+      <h1>PAWSIC</h1>
+      <p>Post-Acute Wound &amp; Skin Integrity Council</p>
+    </div>
+  </div>
+  <h2>Email Templates <em>for Review</em></h2>
+  <p class="subtitle">Executive Committee, please review the email designs below. For each template, you can preview how it will look and leave your feedback or approval directly on this page.</p>
+</div>
+
+<div class="main">
+
+  <!-- Instructions -->
+  <div class="instructions">
+    <h3>How to Review</h3>
+    <p>We have designed <strong>8 email templates</strong> across three categories: Newsletters, Course Engagement, and Welcome emails. Each card below shows:</p>
+    <ol>
+      <li><strong>A live preview</strong> of the email on the left (scroll to see the full email)</li>
+      <li><strong>Details</strong> about who receives this email and its purpose on the right</li>
+      <li><strong>A feedback form</strong> where you can approve or request changes</li>
+    </ol>
+    <p>Simply type your name, add any comments, and click <strong>"Approve"</strong> or <strong>"Request Changes"</strong> for each email. Your feedback will be sent directly to the PAWSIC team. You can review on your phone or computer.</p>
+  </div>
+
+  <!-- ════════════════════════════════════════════ -->
+  <!-- CATEGORY 1: NEWSLETTERS -->
+  <!-- ════════════════════════════════════════════ -->
+  <div class="category">
+    <h3>Newsletters</h3>
+    <p>Recurring emails sent to members and subscribers with PAWSIC updates, resources, and clinical insights</p>
+  </div>
+
+  <!-- 1. Premium Newsletter -->
+  <div class="review-card">
+    <div class="card-top">
+      <h4>Premium Member Newsletter</h4>
+      <span class="badge badge-gold">Premium Tier</span>
+    </div>
+    <div class="card-body">
+      <div class="preview-col">
+        <iframe src="emails/newsletter-1-premium.html" title="Premium Member Newsletter Preview"></iframe>
+        <a href="emails/newsletter-1-premium.html" target="_blank" class="view-full">Open Full Size</a>
+      </div>
+      <div class="feedback-col">
+        <div class="email-info">
+          <h5>About This Email</h5>
+          <p><span class="info-label">Sent to:</span> Paid/premium PAWSIC members</p>
+          <p><span class="info-label">Purpose:</span> Deliver exclusive CE course updates, clinical insights, SIG (Special Interest Group) highlights, and premium-only resources. This is the flagship newsletter.</p>
+          <p><span class="info-label">Frequency:</span> Monthly</p>
+          <p><span class="info-label">What to look for:</span> Overall design, section layout, content tone, branding consistency, and call-to-action clarity.</p>
+        </div>
+        <form class="feedback-form" action="https://formsubmit.co/dahlia@pawsic.org" method="POST" onsubmit="showThankYou(event, 'ty-1')">
+          <input type="hidden" name="_subject" value="EC Review: Premium Member Newsletter">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="Email Template" value="Premium Member Newsletter">
+          <input type="hidden" name="Decision" value="" id="decision-1">
+          <h5>Your Feedback</h5>
+          <label for="name-1">Your Name</label>
+          <input type="text" id="name-1" name="Reviewer Name" placeholder="e.g. Dr. Smith" required>
+          <label for="comments-1">Comments or Suggestions</label>
+          <textarea id="comments-1" name="Comments" placeholder="Share any feedback on the design, content, or layout..."></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-approve" onclick="document.getElementById('decision-1').value='Approved'">Approve</button>
+            <button type="submit" class="btn btn-changes" onclick="document.getElementById('decision-1').value='Changes Requested'">Request Changes</button>
+          </div>
+          <div class="thank-you" id="ty-1"><p>Thank you! Your feedback has been submitted.</p></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Free Member Newsletter -->
+  <div class="review-card">
+    <div class="card-top">
+      <h4>Free Member Newsletter</h4>
+      <span class="badge badge-blue">Free Tier</span>
+    </div>
+    <div class="card-body">
+      <div class="preview-col">
+        <iframe src="emails/newsletter-2-free.html" title="Free Member Newsletter Preview"></iframe>
+        <a href="emails/newsletter-2-free.html" target="_blank" class="view-full">Open Full Size</a>
+      </div>
+      <div class="feedback-col">
+        <div class="email-info">
+          <h5>About This Email</h5>
+          <p><span class="info-label">Sent to:</span> Free-tier PAWSIC members</p>
+          <p><span class="info-label">Purpose:</span> Curated free resources with tasteful upgrade prompts. The goal is to demonstrate value and encourage members to upgrade to premium.</p>
+          <p><span class="info-label">Frequency:</span> Monthly</p>
+          <p><span class="info-label">What to look for:</span> Balance between free content and upgrade messaging, design consistency with the premium version, and overall appeal.</p>
+        </div>
+        <form class="feedback-form" action="https://formsubmit.co/dahlia@pawsic.org" method="POST" onsubmit="showThankYou(event, 'ty-2')">
+          <input type="hidden" name="_subject" value="EC Review: Free Member Newsletter">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="Email Template" value="Free Member Newsletter">
+          <input type="hidden" name="Decision" value="" id="decision-2">
+          <h5>Your Feedback</h5>
+          <label for="name-2">Your Name</label>
+          <input type="text" id="name-2" name="Reviewer Name" placeholder="e.g. Dr. Smith" required>
+          <label for="comments-2">Comments or Suggestions</label>
+          <textarea id="comments-2" name="Comments" placeholder="Share any feedback on the design, content, or layout..."></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-approve" onclick="document.getElementById('decision-2').value='Approved'">Approve</button>
+            <button type="submit" class="btn btn-changes" onclick="document.getElementById('decision-2').value='Changes Requested'">Request Changes</button>
+          </div>
+          <div class="thank-you" id="ty-2"><p>Thank you! Your feedback has been submitted.</p></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Subscriber Newsletter -->
+  <div class="review-card">
+    <div class="card-top">
+      <h4>Subscriber Newsletter</h4>
+      <span class="badge badge-teal">Subscriber</span>
+    </div>
+    <div class="card-body">
+      <div class="preview-col">
+        <iframe src="emails/newsletter-3-subscriber.html" title="Subscriber Newsletter Preview"></iframe>
+        <a href="emails/newsletter-3-subscriber.html" target="_blank" class="view-full">Open Full Size</a>
+      </div>
+      <div class="feedback-col">
+        <div class="email-info">
+          <h5>About This Email</h5>
+          <p><span class="info-label">Sent to:</span> Non-member subscribers (signed up via the website but have not joined PAWSIC)</p>
+          <p><span class="info-label">Purpose:</span> Share PAWSIC community highlights and public content. The goal is to convert subscribers into members.</p>
+          <p><span class="info-label">Frequency:</span> Monthly</p>
+          <p><span class="info-label">What to look for:</span> Clarity of the membership value proposition, engaging preview of member benefits, and call-to-action to join.</p>
+        </div>
+        <form class="feedback-form" action="https://formsubmit.co/dahlia@pawsic.org" method="POST" onsubmit="showThankYou(event, 'ty-3')">
+          <input type="hidden" name="_subject" value="EC Review: Subscriber Newsletter">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="Email Template" value="Subscriber Newsletter">
+          <input type="hidden" name="Decision" value="" id="decision-3">
+          <h5>Your Feedback</h5>
+          <label for="name-3">Your Name</label>
+          <input type="text" id="name-3" name="Reviewer Name" placeholder="e.g. Dr. Smith" required>
+          <label for="comments-3">Comments or Suggestions</label>
+          <textarea id="comments-3" name="Comments" placeholder="Share any feedback on the design, content, or layout..."></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-approve" onclick="document.getElementById('decision-3').value='Approved'">Approve</button>
+            <button type="submit" class="btn btn-changes" onclick="document.getElementById('decision-3').value='Changes Requested'">Request Changes</button>
+          </div>
+          <div class="thank-you" id="ty-3"><p>Thank you! Your feedback has been submitted.</p></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════ -->
+  <!-- CATEGORY 2: COURSE ENGAGEMENT -->
+  <!-- ════════════════════════════════════════════ -->
+  <div class="category">
+    <h3>Course Engagement Emails</h3>
+    <p>Automated emails that encourage members to start, continue, or complete their CE courses</p>
+  </div>
+
+  <!-- 4. Course Almost Done -->
+  <div class="review-card">
+    <div class="card-top">
+      <h4>Course Almost Done</h4>
+      <span class="badge badge-teal">Engagement</span>
+    </div>
+    <div class="card-body">
+      <div class="preview-col">
+        <iframe src="emails/course-almost-done.html" title="Course Almost Done Email Preview"></iframe>
+        <a href="emails/course-almost-done.html" target="_blank" class="view-full">Open Full Size</a>
+      </div>
+      <div class="feedback-col">
+        <div class="email-info">
+          <h5>About This Email</h5>
+          <p><span class="info-label">Sent to:</span> Members who started a CE course and are near completion</p>
+          <p><span class="info-label">Purpose:</span> Encourage members to finish their course and earn their CE credits. Creates a sense of accomplishment and urgency.</p>
+          <p><span class="info-label">Trigger:</span> Automated when a member reaches 70%+ course progress</p>
+          <p><span class="info-label">What to look for:</span> Motivational tone, clear progress indicator, and a compelling call-to-action to complete the course.</p>
+        </div>
+        <form class="feedback-form" action="https://formsubmit.co/dahlia@pawsic.org" method="POST" onsubmit="showThankYou(event, 'ty-4')">
+          <input type="hidden" name="_subject" value="EC Review: Course Almost Done Email">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="Email Template" value="Course Almost Done">
+          <input type="hidden" name="Decision" value="" id="decision-4">
+          <h5>Your Feedback</h5>
+          <label for="name-4">Your Name</label>
+          <input type="text" id="name-4" name="Reviewer Name" placeholder="e.g. Dr. Smith" required>
+          <label for="comments-4">Comments or Suggestions</label>
+          <textarea id="comments-4" name="Comments" placeholder="Share any feedback on the design, content, or layout..."></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-approve" onclick="document.getElementById('decision-4').value='Approved'">Approve</button>
+            <button type="submit" class="btn btn-changes" onclick="document.getElementById('decision-4').value='Changes Requested'">Request Changes</button>
+          </div>
+          <div class="thank-you" id="ty-4"><p>Thank you! Your feedback has been submitted.</p></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Course Never Started -->
+  <div class="review-card">
+    <div class="card-top">
+      <h4>Course Never Started</h4>
+      <span class="badge badge-coral">Re-engagement</span>
+    </div>
+    <div class="card-body">
+      <div class="preview-col">
+        <iframe src="emails/course-never-started.html" title="Course Never Started Email Preview"></iframe>
+        <a href="emails/course-never-started.html" target="_blank" class="view-full">Open Full Size</a>
+      </div>
+      <div class="feedback-col">
+        <div class="email-info">
+          <h5>About This Email</h5>
+          <p><span class="info-label">Sent to:</span> Members who enrolled in a CE course but never began</p>
+          <p><span class="info-label">Purpose:</span> Motivate members to start their course by highlighting the benefits and making the first step easy.</p>
+          <p><span class="info-label">Trigger:</span> Automated after enrollment with no activity for a set period</p>
+          <p><span class="info-label">What to look for:</span> Encouraging (not pushy) tone, clear value proposition, and easy one-click action to begin.</p>
+        </div>
+        <form class="feedback-form" action="https://formsubmit.co/dahlia@pawsic.org" method="POST" onsubmit="showThankYou(event, 'ty-5')">
+          <input type="hidden" name="_subject" value="EC Review: Course Never Started Email">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="Email Template" value="Course Never Started">
+          <input type="hidden" name="Decision" value="" id="decision-5">
+          <h5>Your Feedback</h5>
+          <label for="name-5">Your Name</label>
+          <input type="text" id="name-5" name="Reviewer Name" placeholder="e.g. Dr. Smith" required>
+          <label for="comments-5">Comments or Suggestions</label>
+          <textarea id="comments-5" name="Comments" placeholder="Share any feedback on the design, content, or layout..."></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-approve" onclick="document.getElementById('decision-5').value='Approved'">Approve</button>
+            <button type="submit" class="btn btn-changes" onclick="document.getElementById('decision-5').value='Changes Requested'">Request Changes</button>
+          </div>
+          <div class="thank-you" id="ty-5"><p>Thank you! Your feedback has been submitted.</p></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. Course Stalled -->
+  <div class="review-card">
+    <div class="card-top">
+      <h4>Course Stalled</h4>
+      <span class="badge badge-coral">Re-engagement</span>
+    </div>
+    <div class="card-body">
+      <div class="preview-col">
+        <iframe src="emails/course-stalled.html" title="Course Stalled Email Preview"></iframe>
+        <a href="emails/course-stalled.html" target="_blank" class="view-full">Open Full Size</a>
+      </div>
+      <div class="feedback-col">
+        <div class="email-info">
+          <h5>About This Email</h5>
+          <p><span class="info-label">Sent to:</span> Members who started a course but stopped progressing</p>
+          <p><span class="info-label">Purpose:</span> Re-engage members who may have gotten busy or lost momentum. Reminds them of their progress and encourages them to pick back up.</p>
+          <p><span class="info-label">Trigger:</span> Automated after a period of inactivity on an in-progress course</p>
+          <p><span class="info-label">What to look for:</span> Supportive and understanding tone, progress reminder, and clear path to resume.</p>
+        </div>
+        <form class="feedback-form" action="https://formsubmit.co/dahlia@pawsic.org" method="POST" onsubmit="showThankYou(event, 'ty-6')">
+          <input type="hidden" name="_subject" value="EC Review: Course Stalled Email">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="Email Template" value="Course Stalled">
+          <input type="hidden" name="Decision" value="" id="decision-6">
+          <h5>Your Feedback</h5>
+          <label for="name-6">Your Name</label>
+          <input type="text" id="name-6" name="Reviewer Name" placeholder="e.g. Dr. Smith" required>
+          <label for="comments-6">Comments or Suggestions</label>
+          <textarea id="comments-6" name="Comments" placeholder="Share any feedback on the design, content, or layout..."></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-approve" onclick="document.getElementById('decision-6').value='Approved'">Approve</button>
+            <button type="submit" class="btn btn-changes" onclick="document.getElementById('decision-6').value='Changes Requested'">Request Changes</button>
+          </div>
+          <div class="thank-you" id="ty-6"><p>Thank you! Your feedback has been submitted.</p></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════ -->
+  <!-- CATEGORY 3: WELCOME EMAILS -->
+  <!-- ════════════════════════════════════════════ -->
+  <div class="category">
+    <h3>Welcome Emails</h3>
+    <p>Onboarding emails sent immediately after a new member signs up</p>
+  </div>
+
+  <!-- 7. Welcome Member -->
+  <div class="review-card">
+    <div class="card-top">
+      <h4>Welcome Member</h4>
+      <span class="badge badge-navy">Onboarding</span>
+    </div>
+    <div class="card-body">
+      <div class="preview-col">
+        <iframe src="emails/welcome-member-v2.html" title="Welcome Member Email Preview"></iframe>
+        <a href="emails/welcome-member-v2.html" target="_blank" class="view-full">Open Full Size</a>
+      </div>
+      <div class="feedback-col">
+        <div class="email-info">
+          <h5>About This Email</h5>
+          <p><span class="info-label">Sent to:</span> New members immediately after membership sign-up</p>
+          <p><span class="info-label">Purpose:</span> Welcome the member, set expectations, and guide them to their first steps (explore courses, join a SIG, complete their profile).</p>
+          <p><span class="info-label">Trigger:</span> Automatic on membership activation</p>
+          <p><span class="info-label">What to look for:</span> Warm and professional tone, clear next steps, and accurate representation of member benefits.</p>
+        </div>
+        <form class="feedback-form" action="https://formsubmit.co/dahlia@pawsic.org" method="POST" onsubmit="showThankYou(event, 'ty-7')">
+          <input type="hidden" name="_subject" value="EC Review: Welcome Member Email">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="Email Template" value="Welcome Member">
+          <input type="hidden" name="Decision" value="" id="decision-7">
+          <h5>Your Feedback</h5>
+          <label for="name-7">Your Name</label>
+          <input type="text" id="name-7" name="Reviewer Name" placeholder="e.g. Dr. Smith" required>
+          <label for="comments-7">Comments or Suggestions</label>
+          <textarea id="comments-7" name="Comments" placeholder="Share any feedback on the design, content, or layout..."></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-approve" onclick="document.getElementById('decision-7').value='Approved'">Approve</button>
+            <button type="submit" class="btn btn-changes" onclick="document.getElementById('decision-7').value='Changes Requested'">Request Changes</button>
+          </div>
+          <div class="thank-you" id="ty-7"><p>Thank you! Your feedback has been submitted.</p></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8. Welcome Member (MemberPress) -->
+  <div class="review-card">
+    <div class="card-top">
+      <h4>Welcome Member (MemberPress)</h4>
+      <span class="badge badge-navy">Onboarding</span>
+    </div>
+    <div class="card-body">
+      <div class="preview-col">
+        <iframe src="emails/welcome-member-v2-memberpress.html" title="Welcome Member MemberPress Email Preview"></iframe>
+        <a href="emails/welcome-member-v2-memberpress.html" target="_blank" class="view-full">Open Full Size</a>
+      </div>
+      <div class="feedback-col">
+        <div class="email-info">
+          <h5>About This Email</h5>
+          <p><span class="info-label">Sent to:</span> New members immediately after sign-up (via MemberPress integration)</p>
+          <p><span class="info-label">Purpose:</span> Same welcome experience as above, but formatted specifically for delivery through the MemberPress WordPress plugin.</p>
+          <p><span class="info-label">Trigger:</span> Automatic via MemberPress on membership activation</p>
+          <p><span class="info-label">What to look for:</span> Same content and branding as the standard welcome email. Verify the layout renders correctly in this format.</p>
+        </div>
+        <form class="feedback-form" action="https://formsubmit.co/dahlia@pawsic.org" method="POST" onsubmit="showThankYou(event, 'ty-8')">
+          <input type="hidden" name="_subject" value="EC Review: Welcome Member (MemberPress) Email">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="Email Template" value="Welcome Member (MemberPress)">
+          <input type="hidden" name="Decision" value="" id="decision-8">
+          <h5>Your Feedback</h5>
+          <label for="name-8">Your Name</label>
+          <input type="text" id="name-8" name="Reviewer Name" placeholder="e.g. Dr. Smith" required>
+          <label for="comments-8">Comments or Suggestions</label>
+          <textarea id="comments-8" name="Comments" placeholder="Share any feedback on the design, content, or layout..."></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-approve" onclick="document.getElementById('decision-8').value='Approved'">Approve</button>
+            <button type="submit" class="btn btn-changes" onclick="document.getElementById('decision-8').value='Changes Requested'">Request Changes</button>
+          </div>
+          <div class="thank-you" id="ty-8"><p>Thank you! Your feedback has been submitted.</p></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  PAWSIC &bull; Post-Acute Wound &amp; Skin Integrity Council<br>
+  Powered by <a href="https://aipowereddahlia.com">AI Powered Dahlia</a>
+</div>
+
+<script>
+function showThankYou(e, id) {
+  // Let the form submit normally, but show the thank-you on return
+  var el = document.getElementById(id);
+  if (el) el.classList.add('show');
+}
+
+// Check for thank-you on page load (after redirect back)
+if (window.location.search.includes('submitted=true')) {
+  document.querySelectorAll('.thank-you').forEach(function(el) {
+    el.classList.add('show');
+  });
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!--
+  PAWSIC Course Engagement Email -- Never Started
+  ================================================
+  Trigger: Student enrolled in a course but has 0 lesson completions
+  Send via: Make.com Gmail module (NOT MemberPress)
+  Schedule: Weekly, Tuesday 9 AM ET
+
+  Make.com variable placeholders (map to your iterator bundle):
+    {{student_first_name}}  -- Student's first name
+    {{course_title}}        -- Course title
+    {{course_url}}          -- Direct URL to the course on memberships.pawsic.org
+    {{enrolled_date}}       -- Date they enrolled (formatted: Month DD, YYYY)
+
+  COMPLIANCE NOTE: This email is educational engagement only.
+  No promotional content. No product recommendations.
+  No medical claims. For educational purposes only.
+-->
+
+<!-- Preheader text -->
+<div style="display: none; max-height: 0; overflow: hidden; mso-hide: all; font-size: 1px; color: #faf8f4; line-height: 1px;">
+  Your course is ready when you are. Access {{course_title}} and continue your professional development at your own pace.
+  &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+</div>
+
+<!-- Outer wrapper -- cream background -->
+<table role="presentation" style="width: 100%; background-color: #faf8f4;" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center" style="padding: 32px 16px;">
+
+  <!-- Email Container (640px max) -->
+  <table role="presentation" style="width: 640px; max-width: 640px; margin: 0 auto;" border="0" cellspacing="0" cellpadding="0">
+
+    <!-- ========== GRADIENT ACCENT BAR ========== -->
+    <tr>
+      <td style="height: 4px; background-color: #0c1f3f; border-radius: 16px 16px 0 0; font-size: 0; line-height: 0;">&nbsp;</td>
+    </tr>
+
+    <!-- ========== HEADER (Navy Bar + Logo) ========== -->
+    <tr>
+      <td style="background-color: #0c1f3f; padding: 24px 40px;">
+        <table role="presentation" style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td style="width: 56px;" valign="middle">
+              <img src="https://www.jotform.com/uploads/executiveteam_executiveteam874/form_files/Screenshot%202023-04-01%20at%202.19.16%20PM.6446d75ba93ad5.09289746.png" alt="PAWSIC Logo" width="52" height="52" style="display: block; border-radius: 12px;" />
+            </td>
+            <td style="padding-left: 16px;" valign="middle">
+              <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: bold; color: #ffffff; letter-spacing: 0.5px;">PAWSIC</p>
+              <p style="margin: 4px 0 0; font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: rgba(255,255,255,0.55); text-transform: uppercase; letter-spacing: 1.2px;">Post-Acute Wound &amp; Skin Integrity Council</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- ========== HERO SECTION ========== -->
+    <tr>
+      <td style="background-color: #162d54; padding: 48px 40px 40px; text-align: center;">
+
+        <!-- Badge -->
+        <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td style="background-color: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 100px; padding: 6px 18px;">
+              <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: rgba(255,255,255,0.7); letter-spacing: 0.5px;">&#128218; COURSE ENROLLMENT</p>
+            </td>
+          </tr>
+        </table>
+
+        <h1 style="margin: 20px 0 12px; font-family: Georgia, 'Times New Roman', serif; font-size: 30px; font-weight: normal; color: #ffffff; line-height: 1.25;">
+          Your course is ready, <em style="color: #38b6ff; font-style: italic;">{{student_first_name}}</em>
+        </h1>
+
+        <p style="margin: 0 auto 28px; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: rgba(255,255,255,0.72); line-height: 1.65; max-width: 480px;">
+          You enrolled in <strong style="color: #ffffff;">{{course_title}}</strong>. Your course materials are waiting for you whenever you're ready.
+        </p>
+
+        <!-- Primary CTA Button -->
+        <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center" style="border-radius: 100px; background-color: #38b6ff;">
+              <a href="{{course_url}}" target="_blank" style="display: inline-block; padding: 14px 32px; font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: bold; color: #ffffff; text-decoration: none; border-radius: 100px;">
+                Start Learning Now &rarr;
+              </a>
+            </td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+
+    <!-- ========== WHITE BODY ========== -->
+
+    <!-- Course Info Card -->
+    <tr>
+      <td style="background-color: #ffffff; padding: 40px 40px 0;">
+        <table role="presentation" style="width: 100%; border: 2px solid #e8edf2; border-radius: 16px;" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td style="background-color: #eef5f8; padding: 12px 20px; border-radius: 16px 16px 0 0;">
+              <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; color: #0c1f3f; text-transform: uppercase; letter-spacing: 0.8px;">&#128203; Your Enrolled Course</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 20px;">
+              <table role="presentation" style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td style="padding: 6px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #7a8699; width: 120px;">Course:</td>
+                  <td style="padding: 6px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #0c1f3f; font-weight: bold;">{{course_title}}</td>
+                </tr>
+                <tr>
+                  <td style="padding: 6px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #7a8699;">Enrolled:</td>
+                  <td style="padding: 6px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #0c1f3f;">{{enrolled_date}}</td>
+                </tr>
+                <tr>
+                  <td style="padding: 6px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #7a8699;">Progress:</td>
+                  <td style="padding: 6px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #0c1f3f;">Not yet started</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- Body Message -->
+    <tr>
+      <td style="background-color: #ffffff; padding: 36px 40px 0;">
+        <h2 style="margin: 0 0 16px; font-family: Georgia, 'Times New Roman', serif; font-size: 22px; font-weight: normal; color: #0c1f3f;">
+          Ready when you are
+        </h2>
+        <p style="margin: 0 0 16px; font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #3d4a5c; line-height: 1.7;">
+          We know how demanding your schedule can be as a healthcare professional. Your course access doesn't expire -- you can work through the material at whatever pace fits your practice.
+        </p>
+        <p style="margin: 0 0 16px; font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #3d4a5c; line-height: 1.7;">
+          Many PAWSIC members find it helpful to set aside a focused block of time -- even 20-30 minutes per session -- to work through the course content. Your professional development is worth protecting.
+        </p>
+      </td>
+    </tr>
+
+    <!-- Tips Card -->
+    <tr>
+      <td style="background-color: #ffffff; padding: 24px 40px 0;">
+        <table role="presentation" style="width: 100%; border-radius: 16px; background-color: #f0f8ff; border: 1px solid #d0e8f8;" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td style="padding: 24px 28px;">
+              <p style="margin: 0 0 12px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; color: #0c1f3f; text-transform: uppercase; letter-spacing: 0.8px;">&#128161; Getting Started</p>
+              <table role="presentation" style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td style="padding: 6px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #3d4a5c; line-height: 1.5;">
+                    <span style="color: #3a9e8f; font-weight: bold;">1.</span>&nbsp;&nbsp;Log in to your PAWSIC membership account
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 6px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #3d4a5c; line-height: 1.5;">
+                    <span style="color: #3a9e8f; font-weight: bold;">2.</span>&nbsp;&nbsp;Navigate to "My Courses" in your member dashboard
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 6px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #3d4a5c; line-height: 1.5;">
+                    <span style="color: #3a9e8f; font-weight: bold;">3.</span>&nbsp;&nbsp;Select <strong>{{course_title}}</strong> to begin Lesson 1
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 6px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #3d4a5c; line-height: 1.5;">
+                    <span style="color: #3a9e8f; font-weight: bold;">4.</span>&nbsp;&nbsp;Your progress saves automatically -- pick up where you leave off anytime
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- Secondary CTA -->
+    <tr>
+      <td style="background-color: #ffffff; padding: 28px 40px 0; text-align: center;">
+        <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center" style="border-radius: 100px; border: 2px solid #0c1f3f;">
+              <a href="{{course_url}}" target="_blank" style="display: inline-block; padding: 12px 28px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #0c1f3f; text-decoration: none; border-radius: 100px;">
+                Access {{course_title}} &rarr;
+              </a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- Educational Disclaimer -->
+    <tr>
+      <td style="background-color: #ffffff; padding: 28px 40px 0;">
+        <table role="presentation" style="width: 100%; background-color: #fdf9f0; border: 1px solid #e8e0cc; border-radius: 8px;" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td style="padding: 14px 18px;">
+              <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #7a8699; line-height: 1.6; font-style: italic;">
+                This content is for educational purposes and does not constitute medical advice. PAWSIC course materials are designed for licensed healthcare professionals to support continuing professional development.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- Sign Off -->
+    <tr>
+      <td style="background-color: #ffffff; padding: 28px 40px 36px;">
+        <p style="margin: 0 0 4px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #3d4a5c; line-height: 1.65;">
+          We look forward to supporting your professional development.
+        </p>
+        <br />
+        <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #3d4a5c; line-height: 1.65;">
+          Warm regards,
+        </p>
+        <p style="margin: 8px 0 2px; font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: bold; color: #0c1f3f;">
+          Jeanine Maguire, PhD, MPT, CWS
+        </p>
+        <p style="margin: 0 0 12px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #7a8699;">
+          President, PAWSIC
+        </p>
+        <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #3d4a5c;">
+          &#128231; <a href="mailto:memberships@pawsic.org" style="color: #2b7cca; text-decoration: none;">memberships@pawsic.org</a>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          &#127760; <a href="https://www.pawsic.org" style="color: #2b7cca; text-decoration: none;">www.pawsic.org</a>
+        </p>
+      </td>
+    </tr>
+
+    <!-- ========== FOOTER ========== -->
+    <tr>
+      <td style="background-color: #0c1f3f; padding: 28px 40px; border-radius: 0 0 16px 16px;">
+        <table role="presentation" style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center" style="padding-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.08);">
+              <a href="https://pawsic.org/events" target="_blank" style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: rgba(255,255,255,0.55); text-decoration: none;">Webinars</a>
+              &nbsp;&nbsp;&#183;&nbsp;&nbsp;
+              <a href="https://memberships.pawsic.org/courses/" target="_blank" style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: rgba(255,255,255,0.55); text-decoration: none;">CE Courses</a>
+              &nbsp;&nbsp;&#183;&nbsp;&nbsp;
+              <a href="https://donate.stripe.com/dRm8wQ1mC3oE8Ef8p7c7u0m" target="_blank" style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: rgba(255,255,255,0.55); text-decoration: none;">Donate</a>
+              &nbsp;&nbsp;&#183;&nbsp;&nbsp;
+              <a href="https://memberships.pawsic.org/sponsorships" target="_blank" style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: rgba(255,255,255,0.55); text-decoration: none;">Corporate Sponsorship</a>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding-top: 16px;">
+              <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: rgba(255,255,255,0.3); line-height: 1.6;">
+                &copy; 2026 Post-Acute Wound &amp; Skin Integrity Council (PAWSIC)
+                <br />
+                You are receiving this email because you enrolled in a PAWSIC course.
+                <br />
+                <a href="{{unsubscribe_url}}" target="_blank" style="color: rgba(255,255,255,0.35); text-decoration: none;">Unsubscribe</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="https://www.pawsic.org/privacy-policy" target="_blank" style="color: rgba(255,255,255,0.35); text-decoration: none;">Privacy Policy</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="https://www.pawsic.org/terms" target="_blank" style="color: rgba(255,255,255,0.35); text-decoration: none;">Terms of Use</a>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+  </table>
+  <!-- /Email Container -->
+
+</td>
+</tr>
+</table>
+<!-- /Outer Wrapper -->

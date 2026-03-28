@@ -1,0 +1,358 @@
+<!--
+  PAWSIC Welcome Email — MemberPress Compatible
+  ================================================
+  Paste this ENTIRE block into: MemberPress > Settings > Emails > Welcome Email > Body
+
+  MemberPress merge tags used:
+    {$user_first_name}  — Member's first name
+    {$username}          — Username
+    {$login_url}         — Login page URL
+    {$usermeta:mepr-address-one} — (optional, if you collect addresses)
+
+  NOTE: MemberPress provides its own <html>, <head>, <body> wrapper.
+  This content goes INSIDE that wrapper. All styles are inline for max compatibility.
+-->
+
+<!-- Preheader (hidden preview text — shows in inbox before opening) -->
+<div style="display: none; max-height: 0; overflow: hidden; mso-hide: all; font-size: 1px; color: #faf8f4; line-height: 1px;">
+  Welcome to PAWSIC! Your membership is active. Access CE courses, webinars, clinical tools, and a community dedicated to wound and skin care.
+  &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+</div>
+
+<!-- Outer wrapper — cream background -->
+<table role="presentation" style="width: 100%; background-color: #faf8f4;" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center" style="padding: 32px 16px;">
+
+  <!-- Email Container (640px max) -->
+  <table role="presentation" style="width: 640px; max-width: 640px; margin: 0 auto;" border="0" cellspacing="0" cellpadding="0">
+
+    <!-- ========== GRADIENT ACCENT BAR ========== -->
+    <tr>
+      <td style="height: 4px; background-color: #0c1f3f; border-radius: 16px 16px 0 0; font-size: 0; line-height: 0;">&nbsp;</td>
+    </tr>
+
+    <!-- ========== HEADER (Navy Bar + Logo) ========== -->
+    <tr>
+      <td style="background-color: #0c1f3f; padding: 24px 40px;">
+        <table role="presentation" style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td style="width: 56px;" valign="middle">
+              <img src="https://www.jotform.com/uploads/executiveteam_executiveteam874/form_files/Screenshot%202023-04-01%20at%202.19.16%20PM.6446d75ba93ad5.09289746.png" alt="PAWSIC Logo" width="52" height="52" style="display: block; border-radius: 12px;" />
+            </td>
+            <td style="padding-left: 16px;" valign="middle">
+              <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: bold; color: #ffffff; letter-spacing: 0.5px;">PAWSIC</p>
+              <p style="margin: 4px 0 0; font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: rgba(255,255,255,0.55); text-transform: uppercase; letter-spacing: 1.2px;">Post-Acute Wound &amp; Skin Integrity Council</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- ========== HERO SECTION (Gradient) ========== -->
+    <tr>
+      <td style="background-color: #162d54; padding: 48px 40px 40px; text-align: center;">
+        <!--[if mso]>
+        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:640px;">
+          <v:fill type="gradient" color="#162d54" color2="#1e3a6e" />
+          <v:textbox inset="0,0,0,0">
+        <![endif]-->
+
+        <!-- Welcome Badge -->
+        <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td style="background-color: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 100px; padding: 6px 18px;">
+              <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: rgba(255,255,255,0.7); letter-spacing: 0.5px;">&#127891; NEW MEMBER</p>
+            </td>
+          </tr>
+        </table>
+
+        <h1 style="margin: 20px 0 12px; font-family: Georgia, 'Times New Roman', serif; font-size: 32px; font-weight: normal; color: #ffffff; line-height: 1.2;">
+          Welcome to <em style="color: #38b6ff; font-style: italic;">PAWSIC</em>, {$user_first_name}!
+        </h1>
+
+        <p style="margin: 0 auto 28px; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: rgba(255,255,255,0.72); line-height: 1.65; max-width: 480px;">
+          We're thrilled to have you join our community dedicated to improving skin health and wound care in post-acute settings.
+        </p>
+
+        <!-- Primary CTA Button -->
+        <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center" style="border-radius: 100px; background-color: #38b6ff;">
+              <a href="https://memberships.pawsic.org/login-3" target="_blank" style="display: inline-block; padding: 14px 32px; font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: bold; color: #ffffff; text-decoration: none; border-radius: 100px;">
+                Log In to Your Account &rarr;
+              </a>
+            </td>
+          </tr>
+        </table>
+
+        <!--[if mso]></v:textbox></v:rect><![endif]-->
+      </td>
+    </tr>
+
+    <!-- ========== WHITE BODY START ========== -->
+
+    <!-- Login Credentials Card -->
+    <tr>
+      <td style="background-color: #ffffff; padding: 40px 40px 0;">
+        <table role="presentation" style="width: 100%; border: 2px solid #e8edf2; border-radius: 16px;" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td style="background-color: #eef5f8; padding: 12px 20px; border-radius: 16px 16px 0 0;">
+              <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; color: #0c1f3f; text-transform: uppercase; letter-spacing: 0.8px;">&#128274; Your Login Details</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 20px;">
+              <table role="presentation" style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td style="padding: 6px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #7a8699; width: 100px;">Username:</td>
+                  <td style="padding: 6px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #0c1f3f; font-weight: bold;">{$username}</td>
+                </tr>
+                <tr>
+                  <td style="padding: 6px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #7a8699; width: 100px;">Password:</td>
+                  <td style="padding: 6px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #0c1f3f; font-weight: bold;">*** Password you set during signup ***</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- ========== BENEFITS SECTION ========== -->
+    <tr>
+      <td style="background-color: #ffffff; padding: 36px 40px;">
+
+        <h2 style="margin: 0 0 8px; font-family: Georgia, 'Times New Roman', serif; font-size: 24px; font-weight: normal; color: #0c1f3f;">
+          Your Membership Benefits
+        </h2>
+        <p style="margin: 0 0 24px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #7a8699; line-height: 1.6;">
+          As a PAWSIC member, you now have access to these resources:
+        </p>
+
+        <!-- Benefits List Table -->
+        <table role="presentation" style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td style="padding: 7px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #3d4a5c; line-height: 1.5;">
+              <span style="color: #3a9e8f; font-weight: bold;">&#10003;</span>&nbsp;&nbsp;Monthly PAWSIC Newsletter
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #3d4a5c; line-height: 1.5;">
+              <span style="color: #3a9e8f; font-weight: bold;">&#10003;</span>&nbsp;&nbsp;Notification of PAWSIC-featured Events
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #3d4a5c; line-height: 1.5;">
+              <span style="color: #3a9e8f; font-weight: bold;">&#10003;</span>&nbsp;&nbsp;Patient Voice Interactive Forum <span style="color: #7a8699; font-size: 12px;">(Coming Soon)</span>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #3d4a5c; line-height: 1.5;">
+              <span style="color: #3a9e8f; font-weight: bold;">&#10003;</span>&nbsp;&nbsp;Frank &amp; Lizzie Show
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #3d4a5c; line-height: 1.5;">
+              <span style="color: #3a9e8f; font-weight: bold;">&#10003;</span>&nbsp;&nbsp;PAWSIC Podcast <span style="color: #7a8699; font-size: 12px;">(Coming Soon)</span>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #3d4a5c; line-height: 1.5;">
+              <span style="color: #3a9e8f; font-weight: bold;">&#10003;</span>&nbsp;&nbsp;Access to PAWSIC Webinar Library (No CE)
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #3d4a5c; line-height: 1.5;">
+              <span style="color: #3a9e8f; font-weight: bold;">&#10003;</span>&nbsp;&nbsp;Wound Basics Course (No CE)
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #3d4a5c; line-height: 1.5;">
+              <span style="color: #3a9e8f; font-weight: bold;">&#10003;</span>&nbsp;&nbsp;E-book: <em>Chronic Wound Care</em> (Dr. Krasner)
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #3d4a5c; line-height: 1.5;">
+              <span style="color: #3a9e8f; font-weight: bold;">&#10003;</span>&nbsp;&nbsp;Skin Failure Library
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #3d4a5c; line-height: 1.5;">
+              <span style="color: #3a9e8f; font-weight: bold;">&#10003;</span>&nbsp;&nbsp;Mobile Wound Group Checklist
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #3d4a5c; line-height: 1.5;">
+              <span style="color: #3a9e8f; font-weight: bold;">&#10003;</span>&nbsp;&nbsp;Martin-WISE Health Literacy Tool
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #3d4a5c; line-height: 1.5;">
+              <span style="color: #3a9e8f; font-weight: bold;">&#10003;</span>&nbsp;&nbsp;PAWSIC Publications
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #3d4a5c; line-height: 1.5;">
+              <span style="color: #3a9e8f; font-weight: bold;">&#10003;</span>&nbsp;&nbsp;SAWC Attendance Discounts
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #3d4a5c; line-height: 1.5;">
+              <span style="color: #3a9e8f; font-weight: bold;">&#10003;</span>&nbsp;&nbsp;Access to PAWSIC Workshops (Standard Fee)
+            </td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+
+    <!-- ========== UPGRADE CTA CARD ========== -->
+    <tr>
+      <td style="background-color: #ffffff; padding: 0 40px 36px;">
+        <table role="presentation" style="width: 100%; border-radius: 16px;" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td style="background-color: #0c1f3f; padding: 28px 32px; border-radius: 16px;">
+              <p style="margin: 0 0 4px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #38b6ff; text-transform: uppercase; letter-spacing: 1px;">&#127891; UPGRADE AVAILABLE</p>
+              <p style="margin: 0 0 16px; font-family: Georgia, 'Times New Roman', serif; font-size: 20px; color: #ffffff; line-height: 1.3;">
+                Want CE-eligible courses?
+              </p>
+              <p style="margin: 0 0 20px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: rgba(255,255,255,0.65); line-height: 1.6;">
+                Upgrade to Premium for accredited continuing education, deep workshop discounts, professional forums, and more.
+              </p>
+              <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td style="border-radius: 100px; background-color: #38b6ff;">
+                    <a href="https://memberships.pawsic.org/register/premium/" target="_blank" style="display: inline-block; padding: 12px 28px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #ffffff; text-decoration: none; border-radius: 100px;">
+                      Upgrade to Premium &rarr;
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- ========== GETTING STARTED ========== -->
+    <tr>
+      <td style="background-color: #ffffff; padding: 0 40px 36px;">
+        <table role="presentation" style="width: 100%; border: 2px solid #e8edf2; border-radius: 16px;" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td style="padding: 28px 28px 20px;">
+              <h3 style="margin: 0 0 12px; font-family: Georgia, 'Times New Roman', serif; font-size: 20px; color: #0c1f3f; font-weight: normal;">
+                &#127916; Getting Started
+              </h3>
+              <p style="margin: 0 0 20px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #3d4a5c; line-height: 1.65;">
+                Watch this short walkthrough to learn how to navigate your members-only PAWSIC website and access all your resources:
+              </p>
+              <a href="https://www.loom.com/share/41063a45059745b4854be70201fdf2fa?sid=ffb783c6-15e5-45a7-a09a-e08d7757124e" target="_blank" style="text-decoration: none;">
+                <img src="https://memberships.pawsic.org/wp-content/uploads/2023/09/how-to-access-content-2-300x169.gif" alt="Watch: How to Access Your PAWSIC Content" width="300" style="display: block; max-width: 100%; border-radius: 12px; border: 2px solid #e8edf2;" />
+              </a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- ========== STAY CONNECTED ========== -->
+    <tr>
+      <td style="background-color: #ffffff; padding: 0 40px 36px;">
+
+        <h3 style="margin: 0 0 8px; font-family: Georgia, 'Times New Roman', serif; font-size: 20px; color: #0c1f3f; font-weight: normal;">
+          Stay Connected
+        </h3>
+        <p style="margin: 0 0 20px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #3d4a5c; line-height: 1.65;">
+          Follow PAWSIC on social media for upcoming webinars, member highlights, and the latest in wound and skin care:
+        </p>
+
+        <!-- Social Links (text-based for max compatibility) -->
+        <p style="margin: 0 0 8px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 2;">
+          <a href="https://www.linkedin.com/company/pawsic" target="_blank" style="color: #2b7cca; text-decoration: none; font-weight: bold;">LinkedIn</a> &nbsp;&bull;&nbsp;
+          <a href="https://www.facebook.com/101718645328547" target="_blank" style="color: #2b7cca; text-decoration: none; font-weight: bold;">Facebook</a> &nbsp;&bull;&nbsp;
+          <a href="https://www.instagram.com/pawsic_org/" target="_blank" style="color: #2b7cca; text-decoration: none; font-weight: bold;">Instagram</a> &nbsp;&bull;&nbsp;
+          <a href="https://www.x.com/PAWSIC1" target="_blank" style="color: #2b7cca; text-decoration: none; font-weight: bold;">X (Twitter)</a> &nbsp;&bull;&nbsp;
+          <a href="https://www.youtube.com/@PAWSICTeam" target="_blank" style="color: #2b7cca; text-decoration: none; font-weight: bold;">YouTube</a> &nbsp;&bull;&nbsp;
+          <a href="https://www.tiktok.com/@pawsic.org" target="_blank" style="color: #2b7cca; text-decoration: none; font-weight: bold;">TikTok</a>
+        </p>
+
+      </td>
+    </tr>
+
+    <!-- ========== SOCIAL ACKNOWLEDGEMENT ========== -->
+    <tr>
+      <td style="background-color: #ffffff; padding: 0 40px 16px;">
+        <table role="presentation" style="width: 100%; background-color: #eef5f8; border-radius: 12px;" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td style="padding: 16px 20px;">
+              <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #3d4a5c; line-height: 1.6;">
+                &#128588; We'd love to acknowledge your membership on our social channels! If you're comfortable with that, <a href="https://form.jotform.com/executiveteam_executiveteam874/member-social-media-acknowledgement" target="_blank" style="color: #2b7cca; font-weight: bold; text-decoration: none;">sign up here</a>.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- ========== SIGN OFF ========== -->
+    <tr>
+      <td style="background-color: #ffffff; padding: 20px 40px 36px;">
+        <p style="margin: 0 0 4px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #3d4a5c; line-height: 1.65;">
+          Thank you for joining PAWSIC. We're excited to have you with us!
+        </p>
+        <br />
+        <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #3d4a5c; line-height: 1.65;">
+          Warm regards,
+        </p>
+        <p style="margin: 8px 0 2px; font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: bold; color: #0c1f3f;">
+          Jeanine Maguire, PhD, MPT, CWS
+        </p>
+        <p style="margin: 0 0 12px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #7a8699;">
+          President, PAWSIC
+        </p>
+        <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #3d4a5c;">
+          &#128231; <a href="mailto:memberships@pawsic.org" style="color: #2b7cca; text-decoration: none;">memberships@pawsic.org</a>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          &#127760; <a href="https://www.pawsic.org" style="color: #2b7cca; text-decoration: none;">www.pawsic.org</a>
+        </p>
+      </td>
+    </tr>
+
+    <!-- ========== FOOTER ========== -->
+    <tr>
+      <td style="background-color: #0c1f3f; padding: 28px 40px; border-radius: 0 0 16px 16px;">
+        <table role="presentation" style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center" style="padding-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.08);">
+              <a href="https://pawsic.org/events" target="_blank" style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: rgba(255,255,255,0.55); text-decoration: none;">Webinars</a>
+              &nbsp;&nbsp;&#183;&nbsp;&nbsp;
+              <a href="https://memberships.pawsic.org/courses/person-centered-wound-care-post-acute/" target="_blank" style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: rgba(255,255,255,0.55); text-decoration: none;">CE Courses</a>
+              &nbsp;&nbsp;&#183;&nbsp;&nbsp;
+              <a href="https://donate.stripe.com/dRm8wQ1mC3oE8Ef8p7c7u0m" target="_blank" style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: rgba(255,255,255,0.55); text-decoration: none;">Donate</a>
+              &nbsp;&nbsp;&#183;&nbsp;&nbsp;
+              <a href="https://memberships.pawsic.org/sponsorships" target="_blank" style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: rgba(255,255,255,0.55); text-decoration: none;">Corporate Sponsorship</a>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding-top: 16px;">
+              <p style="margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: rgba(255,255,255,0.3); line-height: 1.6;">
+                &copy; 2026 Post-Acute Wound &amp; Skin Integrity Council (PAWSIC)
+                <br />
+                <a href="https://www.pawsic.org/privacy-policy" target="_blank" style="color: rgba(255,255,255,0.35); text-decoration: none;">Privacy Policy</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="https://www.pawsic.org/terms" target="_blank" style="color: rgba(255,255,255,0.35); text-decoration: none;">Terms of Use</a>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+  </table>
+  <!-- /Email Container -->
+
+</td>
+</tr>
+</table>
+<!-- /Outer Wrapper -->

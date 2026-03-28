@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="x-apple-disable-message-reformatting">
+  <title>PAWSIC — Stay Connected to Wound Care Excellence</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* ============================================
+       PAWSIC SUBSCRIBER NEWSLETTER
+       Design System v1.0 — Full-Bleed Layout
+       ============================================ */
+
+    /* --- Reset --- */
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+    body { margin: 0; padding: 0; width: 100% !important; height: 100% !important; }
+
+    /* --- Base --- */
+    body {
+      background-color: #e8e6e1;
+      font-family: 'Inter', Arial, Helvetica, sans-serif;
+      color: #3d4a5c;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    /* --- Typography --- */
+    .headline {
+      font-family: 'DM Serif Display', Georgia, 'Times New Roman', serif;
+      color: #0c1f3f;
+      margin: 0;
+      line-height: 1.3;
+    }
+
+    .headline-italic {
+      font-family: 'DM Serif Display', Georgia, 'Times New Roman', serif;
+      font-style: italic;
+      color: #2b7cca;
+    }
+
+    .body-text {
+      font-family: 'Inter', Arial, Helvetica, sans-serif;
+      color: #3d4a5c;
+      font-size: 15px;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .muted-text {
+      color: #7a8699;
+      font-size: 13px;
+    }
+
+    /* --- Section Tag --- */
+    .section-tag {
+      display: inline-block;
+      background-color: #eef5f8;
+      color: #1e3a6e;
+      font-family: 'Inter', Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+
+    /* --- Card --- */
+    .card {
+      background-color: #ffffff;
+      border: 1px solid #e8edf2;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    /* --- Buttons --- */
+    .btn-primary {
+      display: inline-block;
+      background-color: #38b6ff;
+      color: #ffffff !important;
+      font-family: 'Inter', Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 50px;
+      text-align: center;
+    }
+
+    .btn-coral {
+      display: inline-block;
+      background-color: #e8896a;
+      color: #ffffff !important;
+      font-family: 'Inter', Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 16px 40px;
+      border-radius: 50px;
+      text-align: center;
+      letter-spacing: 0.3px;
+    }
+
+    .btn-outline {
+      display: inline-block;
+      background-color: transparent;
+      color: #38b6ff !important;
+      font-family: 'Inter', Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 10px 24px;
+      border-radius: 50px;
+      border: 2px solid #38b6ff;
+      text-align: center;
+    }
+
+    /* --- Link --- */
+    .link-arrow {
+      color: #38b6ff;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .link-arrow:hover {
+      text-decoration: underline;
+    }
+
+    /* --- Responsive --- */
+    @media screen and (max-width: 480px) {
+      .email-wrapper {
+        width: 100% !important;
+        min-width: 100% !important;
+      }
+      .section-padding {
+        padding: 28px 20px !important;
+      }
+      .card-padding {
+        padding: 24px 20px !important;
+      }
+      .content-padding {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+      .headline-lg {
+        font-size: 24px !important;
+      }
+      .headline-md {
+        font-size: 20px !important;
+      }
+      .hero-headline {
+        font-size: 26px !important;
+      }
+      .join-section {
+        padding: 32px 24px !important;
+      }
+      .sponsor-logo {
+        width: 80px !important;
+        margin: 8px 10px !important;
+      }
+      .btn-coral {
+        padding: 14px 32px !important;
+        font-size: 15px !important;
+      }
+      .mobile-stack {
+        display: block !important;
+        width: 100% !important;
+      }
+      .mobile-center {
+        text-align: center !important;
+      }
+      .header-logo {
+        font-size: 22px !important;
+        letter-spacing: 2px !important;
+      }
+      .event-date-badge {
+        float: none !important;
+        margin-bottom: 12px !important;
+      }
+    }
+  </style>
+
+  <!--[if mso]>
+  <style>
+    * { font-family: Arial, Helvetica, sans-serif !important; }
+  </style>
+  <![endif]-->
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #e8e6e1;">
+
+  <!-- Preview Text (hidden) -->
+  <div style="display: none; max-height: 0; overflow: hidden; font-size: 1px; line-height: 1px; color: #e8e6e1;">
+    Stay connected to wound care excellence. See what's new at PAWSIC and join 2,000+ professionals for free.
+    &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;
+  </div>
+
+  <!-- Outer Wrapper -->
+  <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="background-color: #e8e6e1;">
+    <tr>
+      <td align="center" style="padding: 0;">
+
+        <!-- Email Container: 600px — Single Column, Full-Bleed Sections -->
+        <table role="presentation" cellpadding="0" cellspacing="0" width="600" class="email-wrapper" style="max-width: 600px; width: 100%;">
+
+
+          <!-- =============================================
+               1. HERO HEADER — Subscriber (Light Blue/Teal)
+               No imagery — clean color block, easy to update
+               Just change: issue #, date, and headline each month
+               ============================================= -->
+          <tr>
+            <td style="background-color: #2b7cca; background-image: radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1) 0%, transparent 45%), radial-gradient(circle at 15% 85%, rgba(58,158,143,0.12) 0%, transparent 50%), linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(145deg, #2b7cca 0%, #349ae0 50%, #38b6ff 100%); background-size: 100% 100%, 100% 100%, 60px 60px, 60px 60px, 100% 100%; padding: 0;">
+              <!-- Logo row -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="padding: 28px 36px 0 36px;">
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td style="width: 52px; vertical-align: middle;">
+                          <img src="https://www.jotform.com/uploads/executiveteam_executiveteam874/form_files/Screenshot%202023-04-01%20at%202.19.16%20PM.6446d75ba93ad5.09289746.png" alt="PAWSIC Logo" width="48" height="48" style="display: block; border-radius: 10px;" />
+                        </td>
+                        <td style="padding-left: 14px; vertical-align: middle;">
+                          <p style="margin: 0; font-family: 'Inter', Arial, sans-serif; font-size: 18px; font-weight: 700; color: #ffffff; letter-spacing: 0.5px;">PAWSIC</p>
+                          <p style="margin: 4px 0 0; font-family: 'Inter', Arial, sans-serif; font-size: 11px; color: rgba(255,255,255,0.55); text-transform: uppercase; letter-spacing: 1.2px; font-weight: 500;">Post-Acute Wound &amp; Skin Integrity Council</p>
+                        </td>
+                        <td style="text-align: right; vertical-align: top;">
+                          <span style="display: inline-block; background: rgba(255,255,255,0.2); color: #ffffff; font-family: Inter, Arial, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 6px 16px; border-radius: 100px;">Newsletter</span>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!-- Decorative thin teal rule -->
+              <div style="margin: 24px 36px 0 36px; height: 1px; background: linear-gradient(90deg, rgba(255,255,255,0.5), rgba(255,255,255,0.15), transparent);"></div>
+              <!-- Hero content -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="padding: 32px 36px 20px 36px;">
+                    <!-- EDITABLE: Update issue # and date each month -->
+                    <div style="font-family: Inter, Arial, sans-serif; font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.8); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px;">Issue No. 03 &nbsp;&bull;&nbsp; March 2026</div>
+                    <!-- EDITABLE: Update headline to match this month's theme -->
+                    <div class="hero-headline" style="font-family: 'DM Serif Display', Georgia, serif; font-size: 36px; color: #ffffff; line-height: 1.2;">Stay Connected to <em style="color: #ffffff; font-style: italic;">Wound Care</em> Excellence</div>
+                    <div style="font-family: Inter, Arial, sans-serif; font-size: 15px; color: rgba(255,255,255,0.7); margin-top: 14px; line-height: 1.5;">Your monthly update from the Post-Acute Wound &amp; Skin Integrity Council</div>
+                  </td>
+                </tr>
+              </table>
+              <!-- Teal accent line -->
+              <div style="height: 4px; background: linear-gradient(90deg, #3a9e8f, #38b6ff, #3a9e8f);"></div>
+            </td>
+          </tr>
+
+
+          <!-- =============================================
+               2. PAWSIC HIGHLIGHTS — What's New
+               Full-bleed cream section (#faf8f4)
+               ============================================= -->
+          <tr>
+            <td style="background-color: #faf8f4; padding: 32px 32px 28px 32px;" class="section-padding">
+
+              <!-- Card -->
+              <table role="presentation" cellpadding="0" cellspacing="0" width="100%" class="card" style="background-color: #ffffff; border: 1px solid #e8edf2; border-radius: 16px;">
+                <tr>
+                  <td class="card-padding" style="padding: 32px 32px 28px 32px;">
+
+                    <!-- Section Tag -->
+                    <div style="margin-bottom: 20px;">
+                      <span class="section-tag">What's New</span>
+                    </div>
+
+                    <!-- Headline -->
+                    <h2 class="headline headline-md" style="font-size: 22px; margin: 0 0 20px 0;">
+                      PAWSIC <span class="headline-italic">Highlights</span>
+                    </h2>
+
+                    <!-- News Item 1 -->
+                    <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 14px;">
+                      <tr>
+                        <td style="width: 8px; vertical-align: top; padding-top: 7px;">
+                          <div style="width: 6px; height: 6px; background-color: #38b6ff; border-radius: 50%;"></div>
+                        </td>
+                        <td style="padding-left: 12px;">
+                          <p class="body-text" style="margin: 0; font-size: 14px;">
+                            <span style="color: #7a8699; font-size: 12px; font-weight: 600;">MAR 1</span><br>
+                            <strong style="color: #0c1f3f;">Spring Virtual Conference</strong> registration is now open &mdash; featuring 12 expert-led sessions.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- News Item 2 -->
+                    <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 14px;">
+                      <tr>
+                        <td style="width: 8px; vertical-align: top; padding-top: 7px;">
+                          <div style="width: 6px; height: 6px; background-color: #38b6ff; border-radius: 50%;"></div>
+                        </td>
+                        <td style="padding-left: 12px;">
+                          <p class="body-text" style="margin: 0; font-size: 14px;">
+                            <span style="color: #7a8699; font-size: 12px; font-weight: 600;">FEB 24</span><br>
+                            New <strong style="color: #0c1f3f;">Pressure Injury Prevention Toolkit</strong> now available in the resource library.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- News Item 3 -->
+                    <table role="presentation" cellpadding="0" cellspacing="0" width="100%;">
+                      <tr>
+                        <td style="width: 8px; vertical-align: top; padding-top: 7px;">
+                          <div style="width: 6px; height: 6px; background-color: #38b6ff; border-radius: 50%;"></div>
+                        </td>
+                        <td style="padding-left: 12px;">
+                          <p class="body-text" style="margin: 0; font-size: 14px;">
+                            <span style="color: #7a8699; font-size: 12px; font-weight: 600;">FEB 18</span><br>
+                            The <strong style="color: #0c1f3f;">Frank &amp; Lizzie Show</strong> Episode 14 dropped &mdash; topic: surgical wound complications.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+
+          <!-- =============================================
+               3. EDUCATIONAL TEASER — Clinical Education
+               Full-bleed white section (#ffffff)
+               ============================================= -->
+          <tr>
+            <td style="background-color: #ffffff; padding: 32px 32px 32px 32px;" class="section-padding">
+
+              <!-- Card with Image -->
+              <table role="presentation" cellpadding="0" cellspacing="0" width="100%" class="card" style="background-color: #ffffff; border: 1px solid #e8edf2; border-radius: 16px;">
+
+                <!-- Branded clinical education graphic (mainstay — no external image needed) -->
+                <tr>
+                  <td style="padding: 0;">
+                    <div style="height: 200px; border-radius: 16px 16px 0 0; background-color: #2b7cca; background-image: radial-gradient(circle at 85% 20%, rgba(255,255,255,0.1) 0%, transparent 45%), radial-gradient(circle at 10% 85%, rgba(58,158,143,0.12) 0%, transparent 50%), linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(145deg, #2b7cca 0%, #349ae0 50%, #38b6ff 100%); background-size: 100% 100%, 100% 100%, 60px 60px, 60px 60px, 100% 100%;">
+                      <table role="presentation" cellpadding="0" cellspacing="0" width="100%" height="200" style="width: 100%; height: 200px;">
+                        <tr>
+                          <td align="center" valign="middle" style="padding: 20px 28px;">
+                            <!-- Medical cross icon -->
+                            <div style="display: inline-block; width: 48px; height: 48px; border: 2px solid rgba(255,255,255,0.35); border-radius: 12px; text-align: center; line-height: 44px; margin-bottom: 10px;">
+                              <span style="font-size: 24px; color: #ffffff;">✚</span>
+                            </div>
+                            <p style="font-family: 'Inter', Arial, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,0.85); margin: 0 0 5px 0;">Clinical Education</p>
+                            <p style="font-family: 'DM Serif Display', Georgia, serif; font-size: 22px; color: #ffffff; margin: 0 0 7px 0; line-height: 1.2;">Evidence-Based Learning</p>
+                            <div style="width: 36px; height: 2px; background: rgba(255,255,255,0.4); margin: 0 auto 8px auto;"></div>
+                            <p style="font-family: 'Inter', Arial, sans-serif; font-size: 11px; color: rgba(255,255,255,0.5); margin: 0; letter-spacing: 0.5px;">PAWSIC &nbsp;&bull;&nbsp; Wound Care &nbsp;&bull;&nbsp; Post-Acute</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- Content -->
+                <tr>
+                  <td class="card-padding" style="padding: 28px 32px 32px 32px;">
+
+                    <!-- Section Tag -->
+                    <div style="margin-bottom: 16px;">
+                      <span class="section-tag">Clinical Education</span>
+                    </div>
+
+                    <!-- Title -->
+                    <h3 class="headline" style="font-size: 20px; margin: 0 0 12px 0; line-height: 1.35;">
+                      Biofilm Management in Chronic Wounds: What <span class="headline-italic">Every</span> Clinician Should Know
+                    </h3>
+
+                    <!-- Preview -->
+                    <p class="body-text" style="margin: 0 0 20px 0; font-size: 14px; color: #3d4a5c;">
+                      Biofilm is present in up to 78% of chronic wounds, yet it remains one of the most under-addressed barriers to healing. This overview covers the latest evidence-based strategies for detection and disruption.
+                    </p>
+
+                    <!-- Read More Link -->
+                    <a href="#" class="link-arrow" style="color: #38b6ff; font-weight: 600; text-decoration: none; font-size: 14px;">
+                      Read More &rarr;
+                    </a>
+
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+
+          <!-- =============================================
+               FEATURED PROFESSIONAL SPOTLIGHT
+               EDITABLE: Swap photo, name, credentials, bio
+               ============================================= -->
+          <tr>
+            <td style="background-color: #faf8f4; padding: 32px 32px 32px 32px;" class="section-padding">
+
+              <!-- Card -->
+              <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="background: #ffffff; border: 1px solid #e8edf2; border-radius: 16px; overflow: hidden;">
+
+                <!-- Section Tag inside card -->
+                <tr>
+                  <td style="padding: 24px 24px 0 24px;">
+                    <span class="section-tag">Meet PAWSIC Leaders</span>
+                  </td>
+                </tr>
+
+                <!-- Two-column: Photo + Bio -->
+                <tr>
+                  <td style="padding: 16px 0 0 0;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <!-- Photo column -->
+                        <td class="mobile-stack" width="44%" valign="top" style="width: 44%;">
+                          <!-- EDITABLE: Replace placeholder with <img> tag -->
+                          <div style="background: linear-gradient(135deg, #e8edf2 0%, #d0d7e0 100%); height: 260px;">
+                            <table role="presentation" width="100%" height="260" cellpadding="0" cellspacing="0">
+                              <tr>
+                                <td align="center" valign="middle">
+                                  <div style="width: 64px; height: 64px; border: 2px dashed #b0bec5; border-radius: 50%; line-height: 64px; font-size: 28px; color: #b0bec5; margin: 0 auto 10px auto;">&#128100;</div>
+                                  <div style="font-family: Inter, Arial, sans-serif; font-size: 10px; color: #7a8699; letter-spacing: 0.5px;">HEADSHOT<br><span style="font-size: 9px; color: #b0bec5;">Replace with &lt;img&gt;</span></div>
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                        <!-- Bio column -->
+                        <td class="mobile-stack" width="56%" valign="top" style="width: 56%;">
+                          <div style="background: linear-gradient(145deg, #2b7cca 0%, #38b6ff 100%); height: 260px;">
+                            <table role="presentation" width="100%" height="260" cellpadding="0" cellspacing="0">
+                              <tr>
+                                <td valign="middle" style="padding: 24px 22px;">
+                                  <!-- Teal accent bar -->
+                                  <div style="width: 32px; height: 3px; background: #3a9e8f; margin-bottom: 14px;"></div>
+                                  <!-- EDITABLE: Update bio text -->
+                                  <p style="font-family: 'Inter', Arial, sans-serif; font-size: 13px; color: rgba(255,255,255,0.9); line-height: 1.6; margin: 0;">
+                                    A board-certified wound specialist through the American Board of Wound Management and nursing leader with nearly two decades of experience across diverse healthcare settings.
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <!-- Name + credentials row -->
+                <tr>
+                  <td style="padding: 20px 24px 24px 24px;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          <!-- EDITABLE: Update name -->
+                          <h3 style="font-family: 'DM Serif Display', Georgia, serif; font-size: 22px; color: #0c1f3f; margin: 0 0 4px 0; line-height: 1.2;">Mary <span style="color: #2b7cca; font-style: italic;">Martin</span></h3>
+                          <!-- EDITABLE: Update credentials -->
+                          <p style="font-family: 'Inter', Arial, sans-serif; font-size: 13px; color: #7a8699; margin: 0; font-weight: 500;">BSN, RN, CWS</p>
+                        </td>
+                        <td style="text-align: right; vertical-align: bottom;">
+                          <a href="#" class="link-arrow" style="font-size: 13px; color: #38b6ff; font-weight: 600; text-decoration: none;">Learn More &rarr;</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+
+          <!-- =============================================
+               4. WHY JOIN PAWSIC — Key CTA Section
+               Full-bleed navy-to-blue gradient
+               ============================================= -->
+          <tr>
+            <td style="background: linear-gradient(135deg, #0c1f3f 0%, #1e3a6e 100%); padding: 44px 40px 48px 40px; text-align: center;" class="join-section">
+
+              <!-- Headline -->
+              <h2 style="font-family: 'DM Serif Display', Georgia, serif; color: #ffffff; font-size: 28px; margin: 0 0 8px 0; line-height: 1.3;" class="headline-lg">
+                Join the Leading Voice<br>in <span style="color: #38b6ff; font-style: italic;">Wound Care</span>
+              </h2>
+
+              <!-- Subtitle -->
+              <p style="font-family: 'Inter', Arial, sans-serif; color: rgba(255,255,255,0.7); font-size: 15px; margin: 0 0 28px 0; font-weight: 500;">
+                Free membership &mdash; $0, always.
+              </p>
+
+              <!-- Benefits List -->
+              <table role="presentation" cellpadding="0" cellspacing="0" style="margin: 0 auto 32px auto; text-align: left;">
+                <!-- Benefit 1 -->
+                <tr>
+                  <td style="padding: 0 0 12px 0; vertical-align: top; width: 28px;">
+                    <div style="color: #3a9e8f; font-size: 18px; font-weight: 800; line-height: 1.2;">&#10003;</div>
+                  </td>
+                  <td style="padding: 0 0 12px 8px;">
+                    <p style="font-family: 'Inter', Arial, sans-serif; color: rgba(255,255,255,0.9); font-size: 14px; margin: 0; line-height: 1.5;">
+                      <strong style="color: #ffffff;">Community forums</strong> &mdash; connect with peers nationwide
+                    </p>
+                  </td>
+                </tr>
+                <!-- Benefit 2 -->
+                <tr>
+                  <td style="padding: 0 0 12px 0; vertical-align: top; width: 28px;">
+                    <div style="color: #3a9e8f; font-size: 18px; font-weight: 800; line-height: 1.2;">&#10003;</div>
+                  </td>
+                  <td style="padding: 0 0 12px 8px;">
+                    <p style="font-family: 'Inter', Arial, sans-serif; color: rgba(255,255,255,0.9); font-size: 14px; margin: 0; line-height: 1.5;">
+                      <strong style="color: #ffffff;">Monthly newsletter</strong> &mdash; curated clinical updates
+                    </p>
+                  </td>
+                </tr>
+                <!-- Benefit 3 -->
+                <tr>
+                  <td style="padding: 0 0 12px 0; vertical-align: top; width: 28px;">
+                    <div style="color: #3a9e8f; font-size: 18px; font-weight: 800; line-height: 1.2;">&#10003;</div>
+                  </td>
+                  <td style="padding: 0 0 12px 8px;">
+                    <p style="font-family: 'Inter', Arial, sans-serif; color: rgba(255,255,255,0.9); font-size: 14px; margin: 0; line-height: 1.5;">
+                      <strong style="color: #ffffff;">Basic resource library</strong> &mdash; toolkits and guides
+                    </p>
+                  </td>
+                </tr>
+                <!-- Benefit 4 -->
+                <tr>
+                  <td style="padding: 0 0 0 0; vertical-align: top; width: 28px;">
+                    <div style="color: #3a9e8f; font-size: 18px; font-weight: 800; line-height: 1.2;">&#10003;</div>
+                  </td>
+                  <td style="padding: 0 0 0 8px;">
+                    <p style="font-family: 'Inter', Arial, sans-serif; color: rgba(255,255,255,0.9); font-size: 14px; margin: 0; line-height: 1.5;">
+                      <strong style="color: #ffffff;">Frank &amp; Lizzie Show</strong> &mdash; full episode access
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- CTA Button -->
+              <div style="margin-bottom: 16px;">
+                <a href="#" class="btn-coral" style="display: inline-block; background-color: #e8896a; color: #ffffff !important; font-family: 'Inter', Arial, sans-serif; font-size: 16px; font-weight: 700; text-decoration: none; padding: 16px 44px; border-radius: 50px; letter-spacing: 0.3px;">
+                  Join PAWSIC Free &rarr;
+                </a>
+              </div>
+
+              <!-- Trust Text -->
+              <p style="font-family: 'Inter', Arial, sans-serif; color: rgba(255,255,255,0.45); font-size: 12px; margin: 0; letter-spacing: 0.2px;">
+                No credit card required &middot; Join 2,000+ wound care professionals
+              </p>
+
+            </td>
+          </tr>
+
+
+          <!-- =============================================
+               5. ENGAGEMENT HOOK — Did You Know?
+               Full-bleed cream section (#faf8f4)
+               ============================================= -->
+          <tr>
+            <td style="background-color: #faf8f4; padding: 32px 32px 32px 32px;" class="section-padding">
+
+              <!-- Card -->
+              <table role="presentation" cellpadding="0" cellspacing="0" width="100%" class="card" style="background-color: #ffffff; border: 1px solid #e8edf2; border-radius: 16px;">
+                <tr>
+                  <td class="card-padding" style="padding: 28px 32px 28px 32px;">
+
+                    <!-- Section Tag -->
+                    <div style="margin-bottom: 16px;">
+                      <span class="section-tag">Did You Know?</span>
+                    </div>
+
+                    <!-- Callout with Teal Border -->
+                    <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                      <tr>
+                        <td style="border-left: 4px solid #3a9e8f; padding: 16px 20px; background-color: #f7faf9; border-radius: 0 12px 12px 0;">
+                          <p style="font-family: 'DM Serif Display', Georgia, serif; color: #0c1f3f; font-size: 18px; margin: 0 0 8px 0; line-height: 1.4;">
+                            Chronic wounds affect <span style="color: #3a9e8f; font-weight: 700;">8.2 million</span> Americans each year.
+                          </p>
+                          <p style="font-family: 'Inter', Arial, sans-serif; color: #3d4a5c; font-size: 13px; margin: 0 0 12px 0; line-height: 1.5;">
+                            The annual cost of wound care in the U.S. is estimated between $28&ndash;$97 billion. Evidence-based protocols can reduce healing times by up to 40%.
+                          </p>
+                          <a href="#" class="link-arrow" style="color: #3a9e8f; font-weight: 600; text-decoration: none; font-size: 13px;">
+                            Learn more at PAWSIC.org &rarr;
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+
+          <!-- =============================================
+               6. UPCOMING EVENTS
+               Full-bleed white section (#ffffff)
+               ============================================= -->
+          <tr>
+            <td style="background-color: #ffffff; padding: 32px 32px 32px 32px;" class="section-padding">
+
+              <!-- Card -->
+              <table role="presentation" cellpadding="0" cellspacing="0" width="100%" class="card" style="background-color: #ffffff; border: 1px solid #e8edf2; border-radius: 16px;">
+                <tr>
+                  <td class="card-padding" style="padding: 28px 32px 32px 32px;">
+
+                    <!-- Section Tag -->
+                    <div style="margin-bottom: 20px;">
+                      <span class="section-tag">Events</span>
+                    </div>
+
+                    <!-- Event Card -->
+                    <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                      <tr>
+                        <!-- Date Badge -->
+                        <td style="width: 64px; vertical-align: top; padding-right: 16px;" class="event-date-badge">
+                          <div style="background-color: #eef5f8; border-radius: 12px; text-align: center; padding: 10px 8px; width: 64px;">
+                            <div style="font-family: 'Inter', Arial, sans-serif; font-size: 11px; font-weight: 700; color: #1e3a6e; text-transform: uppercase; letter-spacing: 1px;">APR</div>
+                            <div style="font-family: 'DM Serif Display', Georgia, serif; font-size: 26px; color: #0c1f3f; line-height: 1.1;">12</div>
+                          </div>
+                        </td>
+                        <!-- Event Details -->
+                        <td style="vertical-align: top;">
+                          <h4 style="font-family: 'DM Serif Display', Georgia, serif; color: #0c1f3f; font-size: 17px; margin: 0 0 6px 0; line-height: 1.3;">
+                            Spring Virtual Conference 2026
+                          </h4>
+                          <p style="font-family: 'Inter', Arial, sans-serif; color: #3d4a5c; font-size: 13px; margin: 0 0 14px 0; line-height: 1.5;">
+                            A full day of expert panels, case studies, and live Q&amp;A covering advanced wound management techniques. Open to all.
+                          </p>
+                          <a href="#" class="btn-outline" style="display: inline-block; background-color: transparent; color: #38b6ff !important; font-family: 'Inter', Arial, sans-serif; font-size: 13px; font-weight: 600; text-decoration: none; padding: 8px 20px; border-radius: 50px; border: 2px solid #38b6ff;">
+                            Learn More &rarr;
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+
+          <!-- =============================================
+               7. SPONSOR AREA — Our Partners
+               Full-bleed cream section (#faf8f4)
+               ============================================= -->
+          <tr>
+            <td style="background-color: #faf8f4; padding: 28px 32px 24px 32px;" class="section-padding">
+
+              <p style="font-family: 'Inter', Arial, sans-serif; color: #7a8699; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin: 0 0 20px 0; text-align: center;">Our Partners</p>
+
+              <!-- Sponsor Logos Row -->
+              <table role="presentation" cellpadding="0" cellspacing="0" style="margin: 0 auto;">
+                <tr>
+                  <td style="padding: 0 12px;" class="mobile-stack">
+                    <div style="display: inline-block; width: 120px; height: 48px; background-color: #ffffff; border: 1px solid #e8edf2; border-radius: 10px; line-height: 48px; text-align: center; font-family: 'Inter', Arial, sans-serif; font-size: 10px; color: #b0b8c4; margin: 6px;" class="sponsor-logo">
+                      SPONSOR LOGO
+                    </div>
+                  </td>
+                  <td style="padding: 0 12px;" class="mobile-stack">
+                    <div style="display: inline-block; width: 120px; height: 48px; background-color: #ffffff; border: 1px solid #e8edf2; border-radius: 10px; line-height: 48px; text-align: center; font-family: 'Inter', Arial, sans-serif; font-size: 10px; color: #b0b8c4; margin: 6px;" class="sponsor-logo">
+                      SPONSOR LOGO
+                    </div>
+                  </td>
+                  <td style="padding: 0 12px;" class="mobile-stack">
+                    <div style="display: inline-block; width: 120px; height: 48px; background-color: #ffffff; border: 1px solid #e8edf2; border-radius: 10px; line-height: 48px; text-align: center; font-family: 'Inter', Arial, sans-serif; font-size: 10px; color: #b0b8c4; margin: 6px;" class="sponsor-logo">
+                      SPONSOR LOGO
+                    </div>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+
+          <!-- =============================================
+               8. PLATINUM SPONSORS + FOOTER
+               Combined navy section (#2d4a7a)
+               ============================================= -->
+          <tr>
+            <td style="background-color: #2d4a7a; padding: 40px 32px 20px 32px;">
+              <div style="font-family: 'DM Serif Display', Georgia, serif; font-size: 18px; color: #ffffff; font-style: italic; margin-bottom: 20px;">Special thanks to our platinum sponsors:</div>
+              <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 24px;">
+                <tr>
+                  <td width="33%" style="padding: 12px; text-align: center; background: rgba(255,255,255,0.08); border-radius: 8px;">
+                    <div style="font-family: Inter, Arial, sans-serif; font-size: 12px; font-weight: 700; color: #ffffff; letter-spacing: 1px;">UNITED WOUND HEALING</div>
+                  </td>
+                  <td width="6"></td>
+                  <td width="33%" style="padding: 12px; text-align: center; background: rgba(255,255,255,0.08); border-radius: 8px;">
+                    <div style="font-family: Inter, Arial, sans-serif; font-size: 14px; font-weight: 700; color: #ffffff;">Smith+Nephew</div>
+                  </td>
+                  <td width="6"></td>
+                  <td width="33%" style="padding: 12px; text-align: center; background: rgba(255,255,255,0.08); border-radius: 8px;">
+                    <div style="font-family: Inter, Arial, sans-serif; font-size: 13px; font-weight: 700; color: #ffffff; letter-spacing: 1px;">MEDLINE</div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color: #2d4a7a; padding: 0 32px 40px 32px;">
+              <div style="height: 1px; background: rgba(255,255,255,0.15); margin-bottom: 28px;"></div>
+              <div style="font-family: Inter, Arial, sans-serif; font-size: 14px; color: #ffffff; margin-bottom: 4px;">Crafted with care by <a href="#" style="color: #ffffff; text-decoration: underline; font-style: italic;">AI Powered Dahlia</a></div>
+              <div style="margin: 16px 0 24px 0;">
+                <div style="font-family: 'DM Serif Display', Georgia, serif; font-size: 20px; color: rgba(255,255,255,0.7); font-style: italic;">Dahlia Imanbay</div>
+                <div style="font-family: Inter, Arial, sans-serif; font-size: 8px; color: rgba(255,255,255,0.5); letter-spacing: 2px; text-transform: uppercase; margin-top: 2px;">AI-Powered Digital Solutions</div>
+              </div>
+              <table cellpadding="0" cellspacing="0" style="margin-bottom: 24px;">
+                <tr>
+                  <td style="width: 36px; height: 36px; background: rgba(255,255,255,0.12); border-radius: 8px; text-align: center; vertical-align: middle; font-size: 16px;"><a href="https://www.linkedin.com/company/pawsic" target="_blank" title="LinkedIn" style="color: #fff; text-decoration: none;">in</a></td>
+                  <td width="8"></td>
+                  <td style="width: 36px; height: 36px; background: rgba(255,255,255,0.12); border-radius: 8px; text-align: center; vertical-align: middle; font-size: 16px;"><a href="https://www.facebook.com/101718645328547" target="_blank" title="Facebook" style="color: #fff; text-decoration: none;">f</a></td>
+                  <td width="8"></td>
+                  <td style="width: 36px; height: 36px; background: rgba(255,255,255,0.12); border-radius: 8px; text-align: center; vertical-align: middle; font-size: 14px;"><a href="https://www.instagram.com/pawsic_org/" target="_blank" title="Instagram" style="color: #fff; text-decoration: none;">&#128247;</a></td>
+                  <td width="8"></td>
+                  <td style="width: 36px; height: 36px; background: rgba(255,255,255,0.12); border-radius: 8px; text-align: center; vertical-align: middle; font-size: 14px;"><a href="https://www.x.com/PAWSIC1" target="_blank" title="X (Twitter)" style="color: #fff; text-decoration: none;">&#120143;</a></td>
+                  <td width="8"></td>
+                  <td style="width: 36px; height: 36px; background: rgba(255,255,255,0.12); border-radius: 8px; text-align: center; vertical-align: middle; font-size: 14px;"><a href="https://www.youtube.com/@PAWSICTeam" target="_blank" title="YouTube" style="color: #fff; text-decoration: none;">&#9654;</a></td>
+                  <td width="8"></td>
+                  <td style="width: 36px; height: 36px; background: rgba(255,255,255,0.12); border-radius: 8px; text-align: center; vertical-align: middle; font-size: 14px;"><a href="https://www.tiktok.com/@pawsic.org" target="_blank" title="TikTok" style="color: #fff; text-decoration: none;">&#9835;</a></td>
+                </tr>
+              </table>
+              <div style="margin-bottom: 6px;"><a href="#" style="font-family: Inter, Arial, sans-serif; font-size: 13px; color: rgba(255,255,255,0.7); text-decoration: underline;">View email in browser</a></div>
+              <div><a href="#" style="font-family: Inter, Arial, sans-serif; font-size: 13px; color: rgba(255,255,255,0.7); text-decoration: underline;">Update your preferences</a> <span style="color: rgba(255,255,255,0.5); font-family: Inter, Arial, sans-serif; font-size: 13px;">or</span> <a href="#" style="font-family: Inter, Arial, sans-serif; font-size: 13px; color: rgba(255,255,255,0.7); text-decoration: underline;">unsubscribe</a>.</div>
+            </td>
+          </tr>
+
+
+        <!-- /Email Container -->
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
